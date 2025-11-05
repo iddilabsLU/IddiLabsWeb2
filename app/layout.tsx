@@ -3,6 +3,8 @@ import { Poppins, Lora, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { Toaster } from "@/components/ui/sonner"
 import { ThemeProvider } from "@/components/providers/theme-provider"
+import { Navbar } from "@/components/site/navbar"
+import { Footer } from "@/components/site/footer"
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -23,26 +25,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Boilerplate Theme - Next.js + shadcn/ui",
-    template: "%s | Boilerplate Theme",
+    default: "IddiLabs — Small AI Experiments for Governance",
+    template: "%s | IddiLabs",
   },
-  description: "A production-ready Next.js boilerplate with shadcn/ui, Tailwind CSS, TypeScript, and dark mode support.",
-  keywords: ["Next.js", "React", "TypeScript", "shadcn/ui", "Tailwind CSS", "Boilerplate"],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
+  description: "Independent AI experiments exploring risk, compliance, and operational innovation in Luxembourg.",
+  keywords: ["AI", "Risk Management", "Compliance", "Luxembourg", "Governance", "Risk & Controls"],
+  authors: [{ name: "IddiLabs" }],
+  creator: "IddiLabs",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yoursite.com",
-    title: "Boilerplate Theme - Next.js + shadcn/ui",
-    description: "A production-ready Next.js boilerplate with shadcn/ui, Tailwind CSS, TypeScript, and dark mode support.",
-    siteName: "Boilerplate Theme",
+    url: "https://iddi-labs.com",
+    title: "IddiLabs — Small AI Experiments for Governance",
+    description: "Independent AI experiments exploring risk, compliance, and operational innovation in Luxembourg.",
+    siteName: "IddiLabs",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Boilerplate Theme - Next.js + shadcn/ui",
-    description: "A production-ready Next.js boilerplate with shadcn/ui, Tailwind CSS, TypeScript, and dark mode support.",
-    creator: "@yourusername",
+    title: "IddiLabs — Small AI Experiments for Governance",
+    description: "Independent AI experiments exploring risk, compliance, and operational innovation in Luxembourg.",
   },
   robots: {
     index: true,
@@ -66,7 +67,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="flex min-h-screen flex-col">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
           <Toaster />
         </ThemeProvider>
       </body>
