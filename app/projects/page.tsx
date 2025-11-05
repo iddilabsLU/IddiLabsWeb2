@@ -5,7 +5,6 @@ import { ProjectFilters } from "@/components/projects/project-filters"
 import { getAllProjects, getProjectFilters } from "@/lib/projects"
 
 export const dynamic = "force-dynamic"
-export const runtime = "edge"
 
 export const metadata = {
   title: "Projects",

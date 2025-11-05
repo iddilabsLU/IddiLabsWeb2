@@ -37,7 +37,7 @@ export default function ContactPage() {
 
       setStatus("success")
       setFormData({ name: "", email: "", message: "" })
-    } catch (error) {
+    } catch (_error) {
       setStatus("error")
       setErrorMessage("Something went wrong — please try again.")
     }

@@ -1,9 +1,7 @@
 import { Section } from "@/components/site/section"
-import { SectionHeading } from "@/components/site/section-heading"
 import { FeatureCard } from "@/components/cards/feature-card"
 
 export const dynamic = "force-dynamic"
-export const runtime = "edge"
 
 export const metadata = {
   title: "About",

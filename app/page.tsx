@@ -9,7 +9,6 @@ import { AnimatedBackground } from "@/components/shared/animated-background"
 import { getAllProjects } from "@/lib/projects"
 
 export const dynamic = "force-dynamic"
-export const runtime = "edge"
 
 export default async function HomePage() {
   const projects = await getAllProjects()

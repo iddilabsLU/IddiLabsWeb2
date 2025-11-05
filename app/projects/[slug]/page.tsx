@@ -4,12 +4,11 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Section } from "@/components/site/section"
 import { BadgeList } from "@/components/site/badge-list"
-import { getProjectBySlug, getAllProjects } from "@/lib/projects"
+import { getProjectBySlug } from "@/lib/projects"
 import { ExternalLink, Github, ArrowLeft } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
 
 export const dynamic = "force-dynamic"
-export const runtime = "edge"
 
 interface ProjectPageProps {
   params: Promise<{
