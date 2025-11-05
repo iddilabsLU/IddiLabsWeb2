@@ -1,0 +1,52 @@
+---
+title: "Custom AI Assistant (Offline LLM)"
+slug: "custom-ai-assistant-offline"
+summary: "On-premises assistant for regulated entities. Runs offline and trains on internal documents securely."
+year: 2026
+area: "AI/ML"
+tags: ["LLM", "Offline", "Privacy", "Enterprise", "Compliance"]
+status: "Prototype"
+links:
+  - type: "GitHub"
+    url: "https://github.com/iddilabs"
+hero: "🔒"
+role: "Design, Build, Infrastructure"
+stack: ["Ollama", "LangChain", "Vector DB", "Next.js", "Docker"]
+earlyAccess: true
+waitlistFormId: "custom-ai-assistant-offline"
+---
+
+## Problem
+
+Regulated financial institutions face a dilemma with AI adoption:
+- Cloud-based AI tools expose sensitive data to third parties
+- Compliance requirements prohibit external data sharing
+- Off-the-shelf solutions lack domain-specific knowledge
+- Employees resort to public AI tools, creating security risks
+
+**Key constraints:**
+- Data must remain on-premises at all times
+- AI responses must be auditable and explainable
+- System must integrate with internal knowledge bases
+- Need to support 8GB+ RAM environments (typical enterprise hardware)
+
+## Solution
+
+An on-premises AI assistant that organizations can run entirely offline:
+
+1. **Local LLM Deployment** — Uses open-source models via Ollama (Llama, Mistral) that run on standard hardware
+2. **Private Training** — Fine-tune on internal documents (policies, procedures, regulatory guides) without data leaving infrastructure
+3. **Vector Search Integration** — RAG architecture connects to internal document repositories
+4. **Audit Trail** — Log all queries and responses for compliance review
+5. **Resource Efficient** — Optimized to run on machines with 8GB+ RAM (no GPU required)
+
+Designed for regulated entities that need AI capabilities without compromising data sovereignty.
+
+## Outcomes
+
+- **Zero External Exposure** — All processing happens on-premises
+- **Domain Expertise** — Learns from institution-specific knowledge bases
+- **Compliance-Ready** — Built-in logging and audit capabilities
+- **Accessible Infrastructure** — Runs on existing enterprise hardware
+
+**Learnings:** Offline LLMs have made enormous strides in capability. Smaller models (7B-13B parameters) can deliver strong results when properly fine-tuned on domain data. Resource optimization is critical — inference speed vs. model size trade-offs must match real-world hardware constraints.

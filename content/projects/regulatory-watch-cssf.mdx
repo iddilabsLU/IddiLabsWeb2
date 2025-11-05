@@ -1,0 +1,52 @@
+---
+title: "Regulatory Watch (CSSF Digest)"
+slug: "regulatory-watch-cssf"
+summary: "Automatic monitoring of new CSSF publications with summaries and impact classifications."
+year: 2026
+area: "Compliance"
+tags: ["Automation", "CSSF", "Regulatory", "AI", "RSS", "Monitoring"]
+status: "Prototype"
+links:
+  - type: "GitHub"
+    url: "https://github.com/iddilabs"
+hero: "📡"
+role: "Design, Build, Automation"
+stack: ["Next.js", "OpenAI API", "RSS", "Email Integration", "Cron Jobs"]
+earlyAccess: true
+waitlistFormId: "regulatory-watch-cssf"
+---
+
+## Problem
+
+Compliance teams at Luxembourg financial institutions must monitor CSSF publications constantly:
+- New circulars, FAQs, and regulatory updates appear without warning
+- Manual monitoring is time-consuming and easy to miss
+- Impact assessment requires reading lengthy technical documents
+- Teams waste hours tracking changes across multiple CSSF pages
+
+**Pain points:**
+- No centralized alert system for CSSF updates
+- Initial impact classification is subjective and inconsistent
+- Regulatory changes can be buried in dense PDF documents
+- Response time suffers when teams learn about updates late
+
+## Solution
+
+An automated regulatory monitoring system that:
+
+1. **Continuous Monitoring** — Polls CSSF website and RSS feeds for new publications
+2. **AI Summarization** — Generates concise summaries of circulars, FAQs, and regulatory updates using OpenAI
+3. **Impact Classification** — Automatically categorizes updates by relevance (High/Medium/Low impact) based on institution type and business lines
+4. **Multi-Channel Alerts** — Sends notifications via email, Slack, or RSS when new content is published
+5. **Historical Archive** — Maintains searchable database of all CSSF publications with metadata
+
+Designed to help compliance teams stay ahead of regulatory changes with minimal manual effort.
+
+## Outcomes
+
+- **Zero Missed Updates** — Automated polling ensures nothing slips through
+- **Faster Response** — Teams receive alerts within hours of publication
+- **Consistent Classification** — AI-driven impact assessment reduces subjectivity
+- **Time Savings** — Eliminates daily manual checks of CSSF website
+
+**Learnings:** Regulatory websites lack standardized data feeds, requiring robust scraping and change detection. AI summarization must preserve critical details — brevity can't compromise accuracy. Multi-channel delivery is essential as teams have different notification preferences.

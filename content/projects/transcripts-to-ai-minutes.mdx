@@ -1,0 +1,52 @@
+---
+title: "Transcripts to AI Minutes"
+slug: "transcripts-to-ai-minutes"
+summary: "Local processor converting meeting transcripts into structured minutes with decisions, actions, and responsibilities."
+year: 2025
+area: "Ops"
+tags: ["AI", "OpenAI", "Next.js", "Local Processing", "Meeting Management"]
+status: "Prototype"
+links:
+  - type: "GitHub"
+    url: "https://github.com/iddilabs"
+hero: "🎙️"
+role: "Design, Build, AI Integration"
+stack: ["Next.js 15", "OpenAI API", "React 19", "Tailwind CSS", "PDF Export"]
+earlyAccess: true
+waitlistFormId: "transcripts-to-ai-minutes"
+---
+
+## Problem
+
+Meeting minutes are time-consuming to write and often lack consistency. Teams spend hours:
+- Reviewing audio or video recordings
+- Extracting decisions, action items, and owners
+- Formatting minutes for distribution
+- Tracking follow-up tasks and deadlines
+
+**Common pain points:**
+- Minutes are written days after meetings when context fades
+- Action items get buried in unstructured notes
+- No standard template means every meeting doc looks different
+- Manual extraction of decisions and owners is tedious
+
+## Solution
+
+A local audio-to-minutes processor that:
+
+1. **Transcription** — Upload meeting audio/video for automatic transcription
+2. **AI Extraction** — Identify decisions, action items, owners, and deadlines using OpenAI
+3. **Template-Based Output** — Generate structured minutes following customizable templates
+4. **Offline Processing** — Run entirely on local infrastructure (audio never leaves your environment)
+5. **Export Options** — Output to PDF, Word, or structured JSON for integration with task management tools
+
+Designed for teams that value privacy and need consistent, professional meeting documentation.
+
+## Outcomes
+
+- **Time Savings** — Reduce minute-writing from hours to minutes
+- **Consistency** — Every meeting follows the same clear structure
+- **Actionability** — Decisions and tasks are immediately visible and trackable
+- **Privacy-First** — Local processing means sensitive discussions stay internal
+
+**Learnings:** AI excels at structured extraction but requires careful prompt engineering to handle different meeting styles (formal board meetings vs. casual team stand-ups). Template flexibility is key to adoption.
